@@ -1,7 +1,7 @@
 {
-  "name": "X-tra Telegram",
-  "description": "Userbot created by a SNAPDRAGON and custom fork by ANUBIS\n\n join https://t.me/XtraTgChat for any problems or support",
-  "logo": "https://telegra.ph/file/1be6c59f53fef57b5745b.jpg",
+  "name": "Akashi's Userbot",
+  "description": "Userbot for personal use created by Akashi",
+  "logo": "https://telegra.ph/file/8ea79f60964dd205d110c.png",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Dark-Princ3/X-tra-Telegram/",
+  "repository": "https://github.com/emperorakashi4/Userbot/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -91,6 +91,56 @@
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
+      "value": "",
+      "required": false
+    },
+    "PLUGIN_CHANNEL": {
+      "description": "Plugin Update",
+      "value": "",
+      "required": false
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "Private Group ID",
+      "value": "",
+      "required": false
+    },
+    "PRIVATE_GROUP_BOT_API_ID": {
+      "description": "Bot API ID",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku API",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku App Name",
+      "value": "",
+      "required": false
+    },
+    "G_DRIVE_CLIENT_ID": {
+      "description": "GDRIVE",
+      "value": "",
+      "required": false
+    },
+    "G_DRIVE_CLIENT_SECRET": {
+      "description": "GDRIVE SECRET",
+      "value": "",
+      "required": false
+    },
+    "AUTH_TOKEN_DATA": {
+      "description": "AUTH TOKEN",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_NAME": {
+      "description": "Alive Name",
+      "value": "",
+      "required": false
+    },
+    "CHROMEDRIVER_VERSION": {
+      "description": "For Carbon",
       "value": "",
       "required": false
     },

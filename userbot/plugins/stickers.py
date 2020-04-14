@@ -52,7 +52,7 @@ async def _(event):
     userid = event.from_id
     packname = f"{user.first_name}'s Pack Vol.{pack}"
     packshortname = f"vol_{pack}_with_{userid}"
-    await event.edit("Hey! That Sticker Looks Good,\nI'm Kanging It...")
+    await event.edit("`Hey! That Sticker Looks Good,`\n`I'm Kanging It...`")
 
     is_a_s = is_it_animated_sticker(reply_message)
     file_ext_ns_ion = "Akashi.png"
@@ -192,7 +192,7 @@ async def _(event):
                 await silently_send_message(bot_conv, "/done")
 
 
-    await event.edit(f"**Kanged!**\nThis Sticker Can Be Found [here](t.me/addstickers/{packshortname})\nKanged"
+    await event.edit(f"**Kanged!**\n`This Sticker Can Be Found` [here](t.me/addstickers/{packshortname})\nKanged"
                      f" by [Akashi](tg://user?id=1089637689)\n")
 
 

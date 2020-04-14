@@ -43,7 +43,7 @@ async def startmute(event):
         except Exception as e:
             await event.edit("Error occured!\nError is " + str(e))
         else:
-            await event.edit("User Muted Successfully!\nMessage [Akashi](tg://user?id=1089637689) To Get Yourself Unmuted.")
+            await event.edit("`User Muted Successfully!`\n`Message` [Akashi](tg://user?id=1089637689) `To Get Yourself Unmuted.`")
 
 @command(outgoing=True, pattern=r"^.unmute ?(\d+)?")
 async def endmute(event):
@@ -118,7 +118,7 @@ async def startmute(event):
         except Exception as e:
             await event.edit("Error occured!\nError is " + str(e))
         else:
-            await event.edit("User Muted Successfully!\nMessage [Akashi](tg://user?id=1089637689) To Get Yourself Unmuted.")
+            await event.edit("`User Muted Successfully!`\n`Message` [Akashi](tg://user?id=1089637689) `To Get Yourself Unmuted.`")
 
 @command(outgoing=True, pattern=r"^.unmute ?(\d+)?", allow_sudo=True)
 async def endmute(event):

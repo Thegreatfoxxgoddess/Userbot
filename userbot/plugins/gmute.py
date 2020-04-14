@@ -28,7 +28,7 @@ async def startgmute(event):
     except Exception as e:
         await event.edit("Error occured!\nError is " + str(e))
     else:
-        await event.edit("User Gmuted Successfully.\nYou're now muted in all those groups where Akashi is admin!\nMessage [Akashi](tg://user?id=1089637689) to get yourself unmuted.")
+        await event.edit("`User Gmuted Successfully.\nYou're now muted in all those groups where Akashi is admin!\nMessage` [Akashi](tg://user?id=1089637689) `to get yourself unmuted.`")
 
 @command(outgoing=True, pattern=r"^.ungmute ?(\d+)?")
 async def endgmute(event):
@@ -56,7 +56,7 @@ async def endgmute(event):
     except Exception as e:
         await event.edit("Error occured!\nError is " + str(e))
     else:
-        await event.edit("Unmuted Successfully!\nPlease be careful next time.")
+        await event.edit("`Unmuted Successfully!\nPlease be careful next time.`")
 
 @command(outgoing=True, pattern=r"^.gmute ?(\d+)?", allow_sudo=True)
 async def startgmute(event):
@@ -85,7 +85,7 @@ async def startgmute(event):
     except Exception as e:
         await event.edit("Error occured!\nError is " + str(e))
     else:
-        await event.edit("User Gmuted Successfully.\nYou're now muted in all those groups where Akashi is admin!\nMessage [Akashi](tg://user?id=1089637689) to get yourself unmuted.")
+        await event.edit("`User Gmuted Successfully.\nYou're now muted in all those groups where Akashi is admin!\nMessage` [Akashi](tg://user?id=1089637689) `to get yourself unmuted.`")
 
 @command(outgoing=True, pattern=r"^.ungmute ?(\d+)?", allow_sudo=True)
 async def endgmute(event):
@@ -113,7 +113,7 @@ async def endgmute(event):
     except Exception as e:
         await event.edit("Error occured!\nError is " + str(e))
     else:
-        await event.edit("Unmuted Successfully!\nPlease be careful next time.")
+        await event.edit("Unmuted Successfully!\nPlease be careful next time.`")
 
 @command(incoming=True)
 async def watcher(event):

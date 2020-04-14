@@ -47,7 +47,7 @@ async def _(event):
          TWO = ("`So You Were Here To Spam?`\n`You've Been Blocked And Reported`")
          FOUR = ("Okay. Let him come online and respond to you. Don't Spam.")
          FIVE = ("Okay. Let him come online and respond to you. Don't Spam.")
-         LWARN = ("If You Send Another Message, You'll Be Blocked.\nUse `/start` to go back to the main menu.")
+         LWARN = ("`If You Send Another Message, You'll Be Blocked.\nUse` **/start** `to go back to the main menu.`")
      
         async with borg.conversation(chat) as conv:
          await borg.send_message(chat, PM)

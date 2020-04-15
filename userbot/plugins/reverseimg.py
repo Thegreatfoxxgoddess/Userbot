@@ -51,7 +51,7 @@ async def okgoogle(img):
         image.save(name, "PNG")
         image.close()
         # https://stackoverflow.com/questions/23270175/google-reverse-image-search-using-post-request#28792943
-        searchUrl = 'https://www.google.com/searchbyimage/upload'
+        searchUrl = 'https://www.duplichecker.com/reverse-image-search.php'
         multipart = {
             'encoded_image': (name, open(name, 'rb')),
             'image_content': ''

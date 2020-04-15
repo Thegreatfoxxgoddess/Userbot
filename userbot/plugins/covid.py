@@ -29,10 +29,7 @@ covid_str = f"""`{'Confirmed':<9}:`  **%(confirmed)s**
 critical_str = f"\n`{'Critical':<9}:`  **%(critical)s**"
 
 
-@client.onMessage(
-    command="covid",
-    outgoing=True, regex="(?:covid|corona)(?: |$)(.*)"
-)
+@borg.on(admin_cmd("covid"))
 async def covid19(event: NewMessage.Event) -> None:
     """Get the current COVID-19 stats for a specific country or overall."""
     covid = Covid(source="worldometers")

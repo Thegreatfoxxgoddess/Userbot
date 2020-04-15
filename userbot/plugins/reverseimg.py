@@ -5,7 +5,7 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
-""" Userbot module for reverse searching stickers and images on Google """
+""" Userbot module for reverse searching stickers and images on Yandex """
 
 import io
 import os
@@ -51,7 +51,7 @@ async def okgoogle(img):
         image.save(name, "PNG")
         image.close()
         # https://stackoverflow.com/questions/23270175/google-reverse-image-search-using-post-request#28792943
-        searchUrl = 'https://www.duplichecker.com/reverse-image-search.php'
+        searchUrl = 'https://www.duplicheckerlichecker.com/reverse-image-search.php'
         multipart = {
             'encoded_image': (name, open(name, 'rb')),
             'image_content': ''

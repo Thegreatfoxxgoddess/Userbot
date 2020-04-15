@@ -67,7 +67,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         if event.is_private:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
-                await event.edit("You've Been Blocked Because Akashi Thinks You're Retarded.\nHave Fun [{}](tg://user?id={})".format(firstname, chat.id))
+                await event.edit("You've Been Blocked Because Max Thinks You're spamming.\nHave Fun [{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 

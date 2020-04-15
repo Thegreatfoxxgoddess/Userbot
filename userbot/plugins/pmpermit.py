@@ -15,7 +15,7 @@ USER_BOT_WARN_ZERO = "`You Were Spamming My Inbox, Hence You Are Blocked And Rep
 USER_BOT_NO_WARN = ("Hey There!\n"
                     "This Is An Automated Reply By "
                     f"{DEFAULTUSER}'s Chatbot.\n"
-                    "Akashi Hasn't Approved You To PM\n\n"
+                    "Max Hasn't Approved You To PM\n\n"
                     "** Send** `/start` ** to tell me why you're here.**")
 
 

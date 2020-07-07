@@ -11,7 +11,7 @@ from datetime import datetime
 from telethon import events
 from uniborg.util import admin_cmd, progress
 #
-from apiclient.discovery import build
+from googleapiclient.discovery import build
 from apiclient.http import MediaFileUpload
 from apiclient.errors import ResumableUploadError
 from oauth2client.client import OAuth2WebServerFlow
@@ -63,7 +63,7 @@ async def _(event):
             end = datetime.now()
             ms = (end - start).seconds
             required_file_name = downloaded_file_name
-            await mone.edit("Downloaded to Cloud in {} seconds.".format(downloaded_file_name, ms))
+            await mone.edit("Downloaded to `{}` in {} seconds.".format(downloaded_file_name, ms))
     elif input_str:
         input_str = input_str.strip()
         if os.path.exists(input_str):
@@ -93,7 +93,7 @@ async def _(event):
         # Sometimes API fails to retrieve starting URI, we wrap it.
         try:
             g_drive_link = await upload_file(http, required_file_name, file_name, mime_type,mone,parent_id)
-            await mone.edit("Successfully Uploaded File on G-Drive :\n[{}]({})".format(file_name,g_drive_link))
+            await mone.edit("__Successfully Uploaded File on G-Drive :__\n[{}]({})".format(file_name,g_drive_link))
         except Exception as e:
             await mone.edit(f"Exception occurred while uploading to gDrive {e}")
     else:

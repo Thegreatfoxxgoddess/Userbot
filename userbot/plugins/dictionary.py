@@ -13,7 +13,7 @@ async def _(event):
     input_str = event.pattern_match.group(1)
     input_url = "https://bots.shrimadhavuk.me/dictionary/?s={}".format(input_str)
     headers = {"USER-AGENT": "UniBorg"}
-    caption_str = f"Meaning of **{input_str}**\n"
+    caption_str = f"Meaning of __{input_str}__\n"
     try:
         response = requests.get(input_url, headers=headers).json()
         pronounciation = response.get("p")
@@ -31,7 +31,7 @@ async def _(event):
         await borg.send_file(
             event.chat_id,
             pronounciation,
-            caption=f"Pronounciation of {input_str}",
+            caption=f"Pronounciation of __{input_str}__",
             force_document=False,
             reply_to=reply_msg_id,
             allow_cache=True,

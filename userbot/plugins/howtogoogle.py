@@ -20,6 +20,6 @@ async def _(event):
     sample_url = "https://da.gd/s?url=https://lmgtfy.com/?q={}%26iie=1".format(input_str.replace(" ","+"))
     response_api = requests.get(sample_url).text
     if response_api:
-        await event.edit("[{}]({})\n`Thank me later ` ".format(input_str,response_api.rstrip()))
+        await event.edit("[{}]({})\n`Thank me Later 🙃` ".format(input_str,response_api.rstrip()))
     else:
-        await event.edit("Something is wrong. Please try again later.")
+        await event.edit("something is wrong. please try again later.")

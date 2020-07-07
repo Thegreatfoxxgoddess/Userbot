@@ -54,7 +54,7 @@ async def _(event):
        await event.edit("```Reply to actual users message.```")
        return
     else:
-       await event.edit("```Memefying The Image :P```")
+       await event.edit("```Transfiguration Time! Mwahaha memifying this image! (」ﾟﾛﾟ)｣ ```")
     file = await borg.download_file(reply_message.media)
     
     async with borg.conversation("@MemeAutobot") as bot_conv:
@@ -69,9 +69,9 @@ async def _(event):
               await event.reply("```Please unblock @MemeAutobot and try again```")
               return
           if response.text.startswith("Forward"):
-              await event.edit("```Disable Your Forward Privacy Settings```")
+              await event.edit("```can you kindly disable your forward privacy settings for good nibba?```")
           if "Okay..." in response.text:
-            await event.edit("```Not An Image It Seems! Will Take Some Time```")
+            await event.edit("```🤨 NANI?! This is not an image! This will take sum tym to convert to image owo 🧐```")
             thumb = None
             if os.path.exists(thumb_image_path):
                 thumb = thumb_image_path
@@ -116,11 +116,11 @@ async def _(event):
                 # Courtesy: @A_Dark_Princ3
             )
             await event.delete()
-            sax = await borg.send_message(event.chat_id, "`Memefied Successfully`")
+            sax = await borg.send_message(event.chat_id, "`☠️☠️10 Points to Griffindor!🔥🔥`")
             await asyncio.sleep(4)
             sax.delete()
           elif not is_message_image(reply_message):
-            await event.edit("Invalid Message!")
+            await event.edit("Invalid message type. Plz choose right message type u NIBBA.")
             return
           else: 
                await borg.send_file(event.chat_id, response.media)

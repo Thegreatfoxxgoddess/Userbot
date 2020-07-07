@@ -39,7 +39,7 @@ async def _(event):
         message_id = event.reply_to_msg_id
         reply_message = await event.get_reply_message()
         # check if media message
-        await event.edit("Analysing This Pic!")
+        await event.edit("`Parsing the image.`")
         try:
             downloaded_file_name = await borg.download_media(
                 reply_message,
@@ -49,11 +49,11 @@ async def _(event):
             await event.edit(str(e))
             return
         else:
-            await event.edit("Removing Background!")
+            await event.edit("sending to ReMove.BG")
             output_file_name = ReTrieveFile(downloaded_file_name)
             os.remove(downloaded_file_name)
     elif input_str:
-        await event.edit("Removing Background!")
+        await event.edit("sending to ReMove.BG")
         output_file_name = ReTrieveURL(input_str)
     else:
         await event.edit(HELP_STR)
@@ -72,9 +72,9 @@ async def _(event):
             )
         end = datetime.now()
         ms = (end - start).seconds
-        await event.edit("Background Removed in {} seconds".format(ms))
+        await event.edit("Removed image's Background in {} seconds, powered by @XtraTgBot".format(ms))
     else:
-        await event.edit("ReMove.BG API returned Errors. Please report to @UniBorg\n`{}".format(output_file_name.content.decode("UTF-8")))
+        await event.edit("ReMove.BG API returned Errors. Please report to @XtraTgBot\n`{}".format(output_file_name.content.decode("UTF-8")))
 
 
 # this method will call the API, and return in the appropriate format

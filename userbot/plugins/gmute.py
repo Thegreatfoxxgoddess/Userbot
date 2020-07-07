@@ -7,7 +7,7 @@ async def startgmute(event):
     if event.fwd_from:
         return
     elif event.is_private:
-        await event.edit("Muting User Globally!")
+        await event.edit("Unexpected issues or ugly errors may occur!")
         await asyncio.sleep(3)
         private = True
     reply = await event.get_reply_message()
@@ -22,13 +22,13 @@ async def startgmute(event):
     chat_id = event.chat_id
     chat = await event.get_chat()
     if is_muted(userid, "gmute"):
-        return await event.edit("This user is already Gmuted.")
+        return await event.edit("This user is already gmuted")
     try:
         mute(userid, "gmute")
     except Exception as e:
         await event.edit("Error occured!\nError is " + str(e))
     else:
-        await event.edit("User Gmuted Successfully.\nYou're Now Gmuted In All Those Groups Where Max Is Admin!\nMessage Akashi To Get Yourself Unmuted.")
+        await event.edit("Successfully gmuted that person")
 
 @command(outgoing=True, pattern=r"^.ungmute ?(\d+)?")
 async def endgmute(event):
@@ -36,7 +36,7 @@ async def endgmute(event):
     if event.fwd_from:
         return
     elif event.is_private:
-        await event.edit("Removing Global Mute!")
+        await event.edit("Unexpected issues or ugly errors may occur!")
         await asyncio.sleep(3)
         private = True
     reply = await event.get_reply_message()
@@ -50,13 +50,13 @@ async def endgmute(event):
         return await event.edit("Please reply to a user or add their into the command to ungmute them.")
     chat_id = event.chat_id
     if not is_muted(userid, "gmute"):
-        return await event.edit("This user is not Gmuted")
+        return await event.edit("This user is not gmuted")
     try:
         unmute(userid, "gmute")
     except Exception as e:
         await event.edit("Error occured!\nError is " + str(e))
     else:
-        await event.edit("Unmuted Successfully!\nPlease Be careful Next Time.")
+        await event.edit("Successfully ungmuted that person")
 
 @command(outgoing=True, pattern=r"^.gmute ?(\d+)?", allow_sudo=True)
 async def startgmute(event):
@@ -64,7 +64,7 @@ async def startgmute(event):
     if event.fwd_from:
         return
     elif event.is_private:
-        await event.edit("Muting User Globally!")
+        await event.edit("Unexpected issues or ugly errors may occur!")
         await asyncio.sleep(3)
         private = True
     reply = await event.get_reply_message()
@@ -79,13 +79,13 @@ async def startgmute(event):
     chat_id = event.chat_id
     chat = await event.get_chat()
     if is_muted(userid, "gmute"):
-        return await event.edit("This user is already Gmuted.")
+        return await event.edit("This user is already gmuted")
     try:
         mute(userid, "gmute")
     except Exception as e:
         await event.edit("Error occured!\nError is " + str(e))
     else:
-        await event.edit("User Gmuted Successfully.\nYou're Now Gmuted In All Those Groups Where Max Is Admin!\nMessage Max To Get Yourself Unmuted.")
+        await event.edit("Successfully gmuted that person")
 
 @command(outgoing=True, pattern=r"^.ungmute ?(\d+)?", allow_sudo=True)
 async def endgmute(event):
@@ -93,7 +93,7 @@ async def endgmute(event):
     if event.fwd_from:
         return
     elif event.is_private:
-        await event.edit("Removing Global Mute!")
+        await event.edit("Unexpected issues or ugly errors may occur!")
         await asyncio.sleep(3)
         private = True
     reply = await event.get_reply_message()
@@ -107,13 +107,13 @@ async def endgmute(event):
         return await event.edit("Please reply to a user or add their into the command to ungmute them.")
     chat_id = event.chat_id
     if not is_muted(userid, "gmute"):
-        return await event.edit("This user is not Gmuted")
+        return await event.edit("This user is not gmuted")
     try:
         unmute(userid, "gmute")
     except Exception as e:
         await event.edit("Error occured!\nError is " + str(e))
     else:
-        await event.edit("Unmuted Successfully!\nPlease Be careful Next Time.")
+        await event.edit("Successfully ungmuted that person")
 
 @command(incoming=True)
 async def watcher(event):

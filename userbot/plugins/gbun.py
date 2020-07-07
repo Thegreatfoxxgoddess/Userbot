@@ -12,9 +12,9 @@ async def gbun(event):
         return
     gbunVar = event.text
     gbunVar = gbunVar[6:]
-    mentions = "Alert! User Is Banned In @Xiaomeme Federation.\n"
-    no_reason = "**Reason**: Most Likely A Spammer"
-    await event.edit("**Starting A Federation Ban!**")
+    mentions = "`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\n`"
+    no_reason = "__Reason: Potential Porn Addict. __"
+    await event.edit("**Summoning out le Gungnir ❗️⚜️☠️**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
     async for x in borg.iter_participants(chat, filter=ChannelParticipantsAdmins):
@@ -27,19 +27,19 @@ async def gbun(event):
         usname = replied_user.user.username
         idd = reply_message.from_id
         # make meself invulnerable cuz why not xD
-        if idd == 1089637689:
-            await reply_message.reply("You Cannot Ban A Federation Admin.\n[Akashi](tg://user?id=1089637689) is a Federation Admin ")
+        if idd == 742506768:
+            await reply_message.reply("`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 69$ to my master__ [Anubis](tg://user?id=742506768) __to release your account__😏")
         else:
-            jnl=("Alert! "
+            jnl=("`Warning!! `"
                   "[{}](tg://user?id={})"
-                  " Is Banned In The @Xiaomeme Federation\n"
-                  "**Name: ** __{}__\n"
-                  "**ID : ** {}\n"
+                  "` 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\n\n`"
+                  "**First Name: ** __{}__\n"
+                  "**ID : ** `{}`\n"
                 ).format(firstname, idd, firstname, idd)
             if usname == None:
-                jnl += "**Username: ** Doesn't own a username!\n"
+                jnl += "**Victim Nigga's username: ** `Doesn't own a username!`\n"
             elif usname != "None":
-                jnl += "**Username** : @{}\n".format(usname)
+                jnl += "**Victim's username** : @{}\n".format(usname)
             if len(gbunVar) > 0:
                 gbunm = "`{}`".format(gbunVar)
                 gbunr = "**Reason: **"+gbunm
@@ -48,6 +48,6 @@ async def gbun(event):
                 jnl += no_reason
             await reply_message.reply(jnl)
     else:
-        mention = "Alert! User Is Banned In The @Xiaomeme Federation\n**Reason:** Most Likely A Spammmer"
+        mention = "`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\nReason: Potential Porn Addict. `"
         await event.reply(mention)
     await event.delete()

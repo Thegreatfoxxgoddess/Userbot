@@ -33,17 +33,17 @@ async def _(event):
 
         animation_chars = [
         
-            "`Parsing User Information`",
-            "`User Info Parsed!`",
-            "`Running Metasploit   0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
-            "`Searching Open Ports 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
-            "`Found 3 Open Ports   8%\n██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",    
-            "`Detecting Loopholes 20%\n█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
-            "`Deploying Scripts   36%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
-            "`Scripts Deployed    52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
-            "`Parsing Root Info   84%\n█████████████████████▒▒▒▒ `",
-            "`Extraction Done    100%\n `",
-            "`Information Stored In Root Directory Is Successfully Uploaded To Max's Database`"
+            "`Connecting To Hacked Private Server...`",
+            "`Target Selected.`",
+            "`Hacking... 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+            "`Hacking... 4%\n█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+            "`Hacking... 8%\n██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",    
+            "`Hacking... 20%\n█████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+            "`Hacking... 36%\n█████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
+            "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
+            "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
+            "`Hacking... 100%\n█████████HACKED███████████ `",
+            "`Targeted Account Hacked...\n\nPay 69$ To` @A_Dark_Princ3 `Or send nudes of female Homo Sapiens To Remove This Hack`"
         ]
 
         for i in animation_ttl:
